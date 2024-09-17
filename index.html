@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Lee's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Jake Lee</h1>
+        <div class="name">Your Name</div>
         <nav>
-            <ul class="tabs">
-                <li><a href="#blog" onclick="showTab('blog')">Blog</a></li>
-                <li><a href="#portfolio" onclick="showTab('portfolio')">Portfolio</a></li>
-                <li><a href="#resume" onclick="showTab('resume')">Resume</a></li>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#other">Other</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="blog" class="tab-content">
-            <h2>Blog</h2>
-            <p>Welcome to my blog! Here I share my thoughts on data science, tech, and more.</p>
-            <!-- Add your blog posts here -->
-        </section>
-
-        <section id="portfolio" class="tab-content hidden">
-            <h2>Portfolio</h2>
-            <p>Check out my data science projects!</p>
+        <section id="home" class="active">
+            <h1>About Me</h1>
+            <p>Brief introduction about yourself.</p>
+            
+            <h2>Experience</h2>
             <ul>
-                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook1.ipynb" target="_blank">Project 1: Customer Segmentation</a></li>
-                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook2.ipynb" target="_blank">Project 2: Housing Prices Analysis</a></li>
-                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook3.ipynb" target="_blank">Project 3: Stock Price Prediction</a></li>
+                <li>
+                    <h3>Job Title</h3>
+                    <p>Company Name | Date - Present</p>
+                    <p>Brief description of your role and achievements.</p>
+                </li>
+                <!-- Add more job experiences as needed -->
+            </ul>
+            
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Degree Name</h3>
+                    <p>University Name | Graduation Year</p>
+                </li>
+                <!-- Add more education details as needed -->
+            </ul>
+            
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <!-- Add more skills as needed -->
             </ul>
         </section>
 
-        <section id="resume" class="tab-content hidden">
-            <h2>Resume</h2>
-            <p>Download my resume: <a href="resume.pdf" target="_blank">Jake Lee's Resume (PDF)</a></p>
-            <!-- You can also directly embed your resume or add sections here -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Add your projects here -->
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Add your blog posts or links here -->
+        </section>
+
+        <section id="other">
+            <h2>Other</h2>
+            <!-- Add any other information here -->
         </section>
     </main>
-
-    <footer>
-        <p>© 2024 Jake Lee</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
