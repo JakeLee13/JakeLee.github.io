@@ -1,3 +1,9 @@
-# JakeLee.github.io
+# JakeLee.github.io [In Progress]
 
-Personal website using vanilla html, css, and javascript
+Building a personal website using vanilla html, css, and javascript
+- About Me
+- Academic Background
+- Work Experience
+- Projects
+- Blog
+- Contact Me
