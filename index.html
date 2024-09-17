@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Lee's Portfolio</title>
+    <title>Jake Lee's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Projects</h1>
+        <h1>Jake Lee</h1>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <ul class="tabs">
+                <li><a href="#blog" onclick="showTab('blog')">Blog</a></li>
+                <li><a href="#portfolio" onclick="showTab('portfolio')">Portfolio</a></li>
+                <li><a href="#resume" onclick="showTab('resume')">Resume</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Jake Lee, a data analyst with experience in Python, econometrics, and data visualization.</p>
-    </section>
+    <main>
+        <section id="blog" class="tab-content">
+            <h2>Blog</h2>
+            <p>Welcome to my blog! Here I share my thoughts on data science, tech, and more.</p>
+            <!-- Add your blog posts here -->
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="project1.html">Project 1</a></li>
-            <li><a href="project2.html">Project 2</a></li>
-            <!-- Add more projects here -->
-        </ul>
-    </section>
-    
-    <section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-        <li><a href="https://nbviewer.org/github/JakeLee13/Singular-Value-Decomposition-using-Python/blob/main/Singular%20Value%20Decomposition%20%281%29.ipynb" target="_blank">Data Science Project 1</a></li>
-    </ul>
-    </section>
+        <section id="portfolio" class="tab-content hidden">
+            <h2>Portfolio</h2>
+            <p>Check out my data science projects!</p>
+            <ul>
+                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook1.ipynb" target="_blank">Project 1: Customer Segmentation</a></li>
+                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook2.ipynb" target="_blank">Project 2: Housing Prices Analysis</a></li>
+                <li><a href="https://nbviewer.jupyter.org/github/username/my-data-science-projects/blob/main/notebook3.ipynb" target="_blank">Project 3: Stock Price Prediction</a></li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: jakelee@example.com</p>
-    </section>
+        <section id="resume" class="tab-content hidden">
+            <h2>Resume</h2>
+            <p>Download my resume: <a href="resume.pdf" target="_blank">Jake Lee's Resume (PDF)</a></p>
+            <!-- You can also directly embed your resume or add sections here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Jake Lee</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
