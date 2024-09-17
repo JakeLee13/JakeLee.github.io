@@ -1,16 +1,24 @@
-function showTab(tabId) {
-    // Hide all tab content
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => {
-        tab.classList.add('hidden');
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('main section');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').slice(1);
+
+            // Update active link
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            link.classList.add('active');
+
+            // Show target section, hide others
+            sections.forEach(section => {
+                if (section.id === targetId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        });
     });
-
-    // Show the selected tab content
-    const selectedTab = document.getElementById(tabId);
-    selectedTab.classList.remove('hidden');
-}
-
-// Initially show the Blog tab
-document.addEventListener("DOMContentLoaded", function() {
-    showTab('blog');
 });
